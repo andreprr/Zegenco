@@ -38,6 +38,7 @@
     display: block;
     margin-top: 5px;
   }
+  
 </style>
 
 <body class="homepage">
@@ -55,6 +56,7 @@
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
   </div>
+  
 
   <section id="billboard" class="bg-light py-5">
     <div class="container">
@@ -71,7 +73,7 @@
               <div class="banner-item image-zoom-effect">
                 <div class="image-holder">
                   <a href="#">
-                    <img src="images/2.jpg" alt="product" class="img-fluid">
+                    <img src="images/6.jpg" alt="product" class="img-fluid">
                   </a>
                 </div>
               </div>
@@ -80,7 +82,7 @@
               <div class="banner-item image-zoom-effect">
                 <div class="image-holder">
                   <a href="#">
-                    <img src="images/6.jpg" alt="product" class="img-fluid">
+                    <img src="images/2.jpg" alt="product" class="img-fluid">
                   </a>
                 </div>
               </div>
@@ -94,15 +96,51 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img src="images/20.jpg" alt="product" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img src="images/22.jpg" alt="product" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img src="images/23.jpg" alt="product" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- Swiper Pagination -->
           <div class="swiper-pagination"></div>
         </div>
-        <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+      
+        <!-- Left Arrow Navigation -->
+        <div class="icon-arrow icon-arrow-left">
+          <svg width="50" height="50" viewBox="0 0 24 24">
             <use xlink:href="#arrow-left"></use>
-          </svg></div>
-        <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
+          </svg>
+        </div>
+      
+        <!-- Right Arrow Navigation -->
+        <div class="icon-arrow icon-arrow-right">
+          <svg width="50" height="50" viewBox="0 0 24 24">
             <use xlink:href="#arrow-right"></use>
-          </svg></div>
+          </svg>
+        </div>
       </div>
     </div>
   </section>
@@ -276,7 +314,7 @@
         <div class="collection-item d-flex flex-wrap my-5">
           <div class="col-md-6 column-container">
             <div class="image-holder">
-              <img src="images/18.jpg" alt="collection" class="product-image img-fluid">
+              <img src="images/testi.jpg" alt="collection" class="product-image img-fluid">
             </div>
           </div>
           <div class="col-md-6 column-container">
@@ -343,7 +381,21 @@
   
   
 
-  
+  <script>
+    const swiper = new Swiper('.main-swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.icon-arrow-right',
+        prevEl: '.icon-arrow-left',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      slidesPerView: 1,
+      spaceBetween: 10,
+    });
+  </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/SmoothScroll.js"></script>
